@@ -1,16 +1,15 @@
-import './App.css';
-import Sample from './components/Sample'
 import About from './components/About'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <Sample />
-      </header>
-      <footer>
+    <div>
+      <div>
+       <Navbar />
+      </div>
+      <div>
       <About />
-      </footer>
+      </div>
     </div>
   );
 }
