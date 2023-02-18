@@ -1,29 +1,36 @@
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import Navbar from 'react-bootstrap/Navbar'
 import React from 'react';
 
-function Navbar() {
+function Navigationbar() {
+  const tabStyle = {
+    listStyle: 'none',
+  }
   return (
     <>
-      <nav className='container'>
-        <ul className="justify-content-center">
-          <li>
+      <Navbar bg='dark' variant='dark'>
+        <Container>
+          <li style={tabStyle}>
             About
           </li>
-          <li>
+          <li style={tabStyle}>
             Portfolio
           </li>
-          <li>
-            Img here
+          <li style={tabStyle}>
+            <h2>Clinton</h2>
+            <h2>Curtiss</h2>
           </li>
-          <li>
+          <li style={tabStyle}>
             Resume
           </li>
-          <li>
+          <li style={tabStyle}>
             Contact
           </li>
-        </ul>
-      </nav>
+        </Container>
+      </Navbar>
     </>
   );
 }
 
-export default Navbar;
+export default Navigationbar;
