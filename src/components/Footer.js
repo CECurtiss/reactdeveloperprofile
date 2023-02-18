@@ -7,45 +7,40 @@ import instaImg from "../assets/icons/instalogo.png";
 import linkedInImg from "../assets/icons/linkedinlogo1.png";
 
 function Footer() {
-    const imgStyle = {
-        height: '75px',
-        width: '75px',
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto'
-    }
-    const footerStyle = {
-        position: 'fixed',
-            bottom: '0',
-            width: '100%',
-    }
+  const imgStyle = {
+    height: "75px",
+    width: "75px",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+  };
+  const footerStyle = {
+    position: "fixed",
+    bottom: "0",
+    width: "100%",
+    padding: "10px",
+  };
   return (
     <footer style={footerStyle}>
-    <Container>
-      <Row>
-        <Col>
-          <Image
-          style={imgStyle} 
-          src={gitHubImg}
-          href="https://github.com/CECurtiss" />
-        </Col>
-        <Col>
-          <Image
-          style={imgStyle}
-            src={instaImg}
-            href="https://www.instagram.com/clintcurtiss/"
-          />
-        </Col>
-        <Col>
-            <Image 
-            style={imgStyle}
-            roundedCircle='true'
-            src={linkedInImg}
-            href='https://www.linkedin.com/in/clinton-curtiss-25783a266/'
-            />
-        </Col>
-      </Row>
-    </Container>
+      <Container>
+        <Row>
+          <Col>
+            <a href="https://github.com/CECurtiss">
+              <Image style={imgStyle} src={gitHubImg} />
+            </a>
+          </Col>
+          <Col>
+            <a href="https://www.instagram.com/clintcurtiss/">
+              <Image style={imgStyle} src={instaImg} />
+            </a>
+          </Col>
+          <Col>
+            <a href="https://www.linkedin.com/in/clinton-curtiss-25783a266/">
+              <Image style={imgStyle} roundedCircle="true" src={linkedInImg} />
+            </a>
+          </Col>
+        </Row>
+      </Container>
     </footer>
   );
 }
