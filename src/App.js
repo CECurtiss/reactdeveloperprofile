@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import Navigationbar from "./components/Navbar";
+import Footer from './components/Footer'
 import { useState } from "react";
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         <Navigationbar currentTab={currentTab} setTab={setTab} />
       </div>
       <div>{renderTab()}</div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
