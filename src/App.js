@@ -1,5 +1,5 @@
 import About from "./components/About";
-import Contact from "./components/Content";
+import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import Navigationbar from "./components/Navbar";
