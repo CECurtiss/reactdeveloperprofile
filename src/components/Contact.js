@@ -6,12 +6,20 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
 function Contact() {
-  const [formState, setFormState] = useState("");
-  const { name, email, message } = formState;
+  const [formContact, setFormContact] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const onSubmit = (e) => {
+  const handleChange = (e) => {
+    setFormContact({ ...formContact, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formState);
+    console.log(formContact);
+    setFormContact({ name: "", email: "", message: "" });
   };
 
   return (
@@ -29,23 +37,38 @@ function Contact() {
               <Form>
                 <Form.Group className="mb-3" controlId="Name">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="name" placeholder="Your Name Here" />
+                  <Form.Control
+                    value={formContact.name}
+                    type="text"
+                    name="name"
+                    onChange={handleChange}
+                    placeholder="Your Name Here"
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Your Email Here" />
+                  <Form.Control
+                    value={formContact.email}
+                    type="email"
+                    name="email"
+                    onChange={handleChange}
+                    placeholder="Your Email Here"
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="message">
                   <Form.Label>Message</Form.Label>
                   <Form.Control
+                    value={formContact.message}
+                    name="message"
+                    onChange={handleChange}
                     as="textarea"
                     rows={4}
                     placeholder="Your Message Here"
                   />
                 </Form.Group>
-                <Button variant="light" type="submit">
+                <Button onSubmit={handleSubmit} variant="light" type="submit">
                   Submit
                 </Button>
               </Form>
