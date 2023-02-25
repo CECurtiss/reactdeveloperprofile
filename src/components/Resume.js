@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import resume from '../assets/resume/Resume.png'
 
 function Resume() {
   return (
@@ -9,7 +10,7 @@ function Resume() {
       <Container>
         <h1 className='text-center'>Resume</h1>
         <div className="d-grid">
-          <Button className='m-4' variant="light" size="lg">
+          <Button href={resume} className='m-4' variant="light" size="lg" download>
             Download Resume
           </Button>
         </div>
