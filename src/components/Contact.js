@@ -3,9 +3,12 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser'
 
 function Contact() {
+  const formRef = useRef();
+
   const [formContact, setFormContact] = useState({
     name: "",
     email: "",
@@ -18,7 +21,13 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formContact);
+    
+    emailjs.sendForm('service_2vgfpnf','contact_form',formRef.current,'AHnTbdfcv5XP2JiV4')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text)
+      })
     setFormContact({ name: "", email: "", message: "" });
   };
 
@@ -34,7 +43,7 @@ function Contact() {
           <Col>
             <Col>Contact Me</Col>
             <Col>
-              <Form>
+              <Form ref={formRef}>
                 <Form.Group className="mb-3" controlId="Name">
                   <Form.Label>Name</Form.Label>
                   <Form.Control
@@ -68,7 +77,7 @@ function Contact() {
                     placeholder="Your Message Here"
                   />
                 </Form.Group>
-                <Button onSubmit={handleSubmit} variant="light" type="submit">
+                <Button onClick={handleSubmit} variant="light" type="submit">
                   Submit
                 </Button>
               </Form>
