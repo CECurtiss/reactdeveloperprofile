@@ -8,10 +8,12 @@ function Navigationbar(props) {
   
     const tabStyle = {
     listStyle: 'none',
+    fontFamily: 'Space Mono monospace',
+    fontSize: '25px',
   }
   return (
     <>
-      <Navbar bg='dark'>
+      <Navbar bg='black' >
         <Container>
           <li style={tabStyle}>
             <a href='#About'
@@ -30,8 +32,8 @@ function Navigationbar(props) {
             </a>
           </li>
           <li style={tabStyle}>
-            <h2>Clinton</h2>
-            <h2>Curtiss</h2>
+            <h1>Clinton</h1>
+            <h1>Curtiss</h1>
           </li>
           <li style={tabStyle}>
           <a href='#Resume'

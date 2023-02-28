@@ -7,8 +7,8 @@ import resume from '../assets/resume/Resume.png'
 function Resume() {
   return (
     <>
-      <Container>
-        <h1 className='text-center'>Resume</h1>
+      <Container className='mt-5'>
+        <h1 className='text-center mt-5'>Resume</h1>
         <div className="d-grid">
           <Button href={resume} className='m-4' variant="light" size="lg" download>
             Download Resume
