@@ -5,6 +5,7 @@ import parks from "../assets/projectscreenshots/parksweather.png";
 import techBlog from "../assets/projectscreenshots/techblog.png";
 import workScheduler from "../assets/projectscreenshots/workdayscheduler.png";
 import noteTaker from "../assets/projectscreenshots/notetakerapp.png";
+import quiz from "../assets/projectscreenshots/quizapp.png";
 
 const cardStyle = {
   width: "350px",
@@ -68,6 +69,19 @@ function Portfolio() {
               </Card.Link>
             </Card.Title>
             <Card.Text>This application will take notes entered by the user and store them so they can be referenced later.</Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card style={cardStyle}>
+          <Card.Img variant="top" src={quiz} />
+          <Card.Body>
+            <Card.Title>
+              <Card.Link href="https://cecurtiss.github.io/JS-HTML-CSS-coding-quiz/">
+                Coding Quiz Game
+              </Card.Link>
+            </Card.Title>
+            <Card.Text>This application is a short quiz game for people learning about HTML and CSS. It will ask questions and provide feedback on the answers.
+            </Card.Text>
           </Card.Body>
         </Card>
       </Row>
