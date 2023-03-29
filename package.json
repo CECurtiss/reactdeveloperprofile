@@ -2,7 +2,7 @@
   "name": "challenge20",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://CECurtiss.github.io/reactdeveloperprofilechallenge20",
+  "homepage": "https://CECurtiss.github.io/reactdeveloperprofile",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
