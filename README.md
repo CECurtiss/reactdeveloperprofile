@@ -39,6 +39,6 @@ none
 Please feel free to [email me](mailto:) if you have any futher questions.
 
 
-https://cecurtiss.github.io/reactdeveloperprofilechallenge20/
+https://cecurtiss.github.io/reactdeveloperprofile/
 
 <img width="1123" alt="Screenshot_20230227_095912" src="https://user-images.githubusercontent.com/107003970/221750311-09c84b95-e148-473e-8036-deb3f3b9ce15.png">
