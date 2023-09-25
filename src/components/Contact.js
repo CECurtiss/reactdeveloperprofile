@@ -42,7 +42,7 @@ function Contact() {
 
   return (
     <div>
-      <h1 className="mb-5 mt-5">Contact Information</h1>
+      <h1 className="mb-5 mt-5 d-flex justify-content-center">Contact Information</h1>
       <Container>
         <Row>
           <Col>

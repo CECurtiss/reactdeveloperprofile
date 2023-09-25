@@ -7,7 +7,7 @@ import profilePic from "../assets/profilepic/profilepic.jpg";
 
 function About() {
   return (
-    <Container className="m-5">
+    <Container className="mt-5">
       <Row>
         <Col>
           <Image
