@@ -21,7 +21,7 @@ function About() {
             <h1 className="text-center m-4">About Me</h1>
           </div>
           <div>
-            <p>
+            <p className="fs-5">
               Hello! My name is Clinton Curtiss. I live in Lawrence, KS and I'm
               a full stack web developer. I'm an avid runner and I love being
               outdoors. I enjoy challenges and I have a desire to be as
