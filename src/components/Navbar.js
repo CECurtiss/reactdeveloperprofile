@@ -55,6 +55,6 @@ function Navigationbar(props) {
       </Navbar>
     </>
   );
-}
+};
 
 export default Navigationbar;
