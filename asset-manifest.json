@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/reactdeveloperprofile/static/css/main.9eb8ece9.css",
-    "main.js": "/reactdeveloperprofile/static/js/main.883b2ba1.js",
+    "main.js": "/reactdeveloperprofile/static/js/main.cbbc0677.js",
     "static/media/parksweather.png": "/reactdeveloperprofile/static/media/parksweather.691ce4c7a3a3182f1509.png",
+    "static/media/corkwebsite.png": "/reactdeveloperprofile/static/media/corkwebsite.feb0a673d41c59b49958.png",
     "static/media/profilepic.jpg": "/reactdeveloperprofile/static/media/profilepic.2a1b0318b1390a17708a.jpg",
     "static/media/ClintonCurtissResume.pdf": "/reactdeveloperprofile/static/media/ClintonCurtissResume.bab555c7ea6bcf0e6add.pdf",
     "static/media/workdayscheduler.png": "/reactdeveloperprofile/static/media/workdayscheduler.919b895d8bcab7d63967.png",
     "static/media/techblog.png": "/reactdeveloperprofile/static/media/techblog.fd3e82368aa9ad0d391f.png",
+    "static/media/quizapp.png": "/reactdeveloperprofile/static/media/quizapp.651ee964f67cebf2b172.png",
     "static/media/notetakerapp.png": "/reactdeveloperprofile/static/media/notetakerapp.811e41f5932c619b2548.png",
-    "static/media/quizapp.png": "/reactdeveloperprofile/static/media/quizapp.d33e54e18d4c373a2ca4.png",
     "static/media/githublogo.webp": "/reactdeveloperprofile/static/media/githublogo.01eff38eed74df9221c7.webp",
     "index.html": "/reactdeveloperprofile/index.html",
     "main.9eb8ece9.css.map": "/reactdeveloperprofile/static/css/main.9eb8ece9.css.map",
-    "main.883b2ba1.js.map": "/reactdeveloperprofile/static/js/main.883b2ba1.js.map"
+    "main.cbbc0677.js.map": "/reactdeveloperprofile/static/js/main.cbbc0677.js.map"
   },
   "entrypoints": [
     "static/css/main.9eb8ece9.css",
-    "static/js/main.883b2ba1.js"
+    "static/js/main.cbbc0677.js"
   ]
 }
