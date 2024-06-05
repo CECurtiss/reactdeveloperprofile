@@ -6,6 +6,7 @@ import techBlog from "../assets/projectscreenshots/techblog.png";
 import workScheduler from "../assets/projectscreenshots/workdayscheduler.png";
 import noteTaker from "../assets/projectscreenshots/notetakerapp.png";
 import quiz from "../assets/projectscreenshots/quizapp.png";
+import cork from "../assets/projectscreenshots/corkwebsite.png";
 
 const cardStyle = {
   width: "350px",
@@ -81,6 +82,19 @@ function Portfolio() {
               </Card.Link>
             </Card.Title>
             <Card.Text>This application is a short quiz game for people learning about HTML and CSS. It will ask questions and provide feedback on the answers.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card style={cardStyle}>
+          <Card.Img variant="top" src={cork} />
+          <Card.Body>
+            <Card.Title>
+              <Card.Link href="https://cecurtiss.github.io/CorkBarrelFrontend/">
+                Cork & Barrel Frontend
+              </Card.Link>
+            </Card.Title>
+            <Card.Text> WORK IN PROGRESS. This is a Frontend deisgn for Cork & Barrel, a business in Lawrence, KS. It will later have login, a backend, and an ecommerce feature with an API that connects to the businesses database.
             </Card.Text>
           </Card.Body>
         </Card>
